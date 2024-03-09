@@ -94,6 +94,10 @@ The "&" character creates a process id for the command inputed in, with means th
 
 Once the container is up and running, your devices can authenticate by TACACS+ connecting to `49/TCP` port, listening to TACACS authentication solicitations. 
 
+### Configuring the device to authenticate into TACACS+ Server: 
+
+To configure the TACACS clients, you'll need to change parameters of AAA into the device and point it to ask TACACS server about the user permissions. To do that, the repository has an configuration example for `SG 1002 MR L2+` Intelbras's switch, you can access it in `./example/switch-example.conf`. 
+
 --- 
 ### Stop Container: 
 To stop the running container, use the following command:
