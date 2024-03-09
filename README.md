@@ -44,9 +44,9 @@ In sequence, configure the environment files for the application container, you 
     }
 ```
 
-#### config/tac_plus.cfg -> Change the TACACS+ Server parameters for AAA:
+#### config/tac_plus.cfg -> Change the TACACS+ Server parameters for user groups:
 ```
-    group = admin {
+    group = groupadmin {
         default service = permit
         enable = permit
         service = shell {
@@ -56,13 +56,27 @@ In sequence, configure the environment files for the application container, you 
         }
     }
 
-    user = $enable$ {
-        login = clear enable
+    group = groupguest {
+        default service = permit
+        service = shell {
+            default command = permit
+            default attribute = permit
+            set priv-lvl = 1
+        }
     }
 
-    user = admin {
-        password = clear admin
-        member = admin
+```
+
+#### config/tac_plus.cfg -> Change the TACACS+ Server parameters for users and passwords:
+```
+    user = capacita {
+        password = clear capacitapass
+        member = groupadmin
+    }
+
+    user = guest {
+        password = clear guestpass
+        member = groupadmin
     }
 ```
 
