@@ -1,6 +1,6 @@
 # TACACS+ Server Appliance with docker
 
-### This repository implements the [TACACS+](https://hub.docker.com/r/lfkeitel/tacacs_plus) images avaiable on DockerHub.
+### This repository implements the [TACACS+](https://hub.docker.com/r/lfkeitel/tacacs_plus) images avaiable on DockerHub to host an mantain an AAA server.
 
 Prerequisites
 Before you begin, ensure you have the following packages installed on your system:
