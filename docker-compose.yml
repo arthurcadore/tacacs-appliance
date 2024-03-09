@@ -1,0 +1,17 @@
+# Main composition file for TACACS+ Application Container.
+# Author: Arthur Cadore M. Barcella
+# Github: arthurcadore
+# Capacitação Redes - PV Intelbras
+
+version: '3'
+services:
+  tacacasplus:
+    container_name: tacacasplus
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "49:49"
+    volumes:
+      - "./config/tac_plus.cfg:/etc/tac_plus/tac_plus.cfg"
+      - "./log/tacacs.log:/var/log/tacacs.log"
