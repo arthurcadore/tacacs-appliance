@@ -1,6 +1,6 @@
-# TACACS+ Server Appliance with docker
+# TACACS+ Server Appliance with Docker
 
-### This repository implements the [TACACS+](https://hub.docker.com/r/lfkeitel/tacacs_plus) images avaiable on DockerHub to host an mantain an AAA server.
+### This repository implements the [TACACS+](https://hub.docker.com/r/lfkeitel/tacacs_plus) images available on DockerHub to host and maintain an AAA server.
 
 Prerequisites
 Before you begin, ensure you have the following packages installed on your system:
@@ -10,14 +10,15 @@ Before you begin, ensure you have the following packages installed on your syste
 - Docker Compose version v2.21.0
 
 ---
+
 ### Getting Started:
 
-First, copy the line below and paste on your prompt to clone the repository:
+First, copy the line below and paste it into your prompt to clone the repository:
 
 ```
 git clone https://github.com/arthurcadore/capacita-tacacs
 ```
-If you don't have installed the package Git yet, do it before try to clone the respository!
+If you haven't installed the Git package yet, do it before trying to clone the repository!
 
 Navigate to the project directory:
 
@@ -25,17 +26,18 @@ Navigate to the project directory:
 cd ./capacita-tacacs
 ```
 
-If you don't have Docker (and Docker-compose) installed on your system yet, it can be installed by run the following commands (Script for Ubuntu 22.04): 
+If you don't have Docker (and Docker Compose) installed on your system yet, you can install it by running the following commands (Script for Ubuntu 22.04):
 
 ```
 ./installDocker.sh
 ```
 
-**If you had to install docker, please remember to reboot you machine to grant user privileges for docker application.** 
+**If you had to install Docker, please remember to reboot your machine to grant user privileges for the Docker application.** 
 
-In sequence, configure the environment files for the application container, you can do this by edditing the following files: 
+Next, configure the environment files for the application container. You can do this by editing the following files:
 
 #### config/tac_plus.cfg -> Change the TACACS+ Server parameters for host access:
+
 ```
     host = world {
         address = 0.0.0.0/0
@@ -86,17 +88,34 @@ Run the command below to start docker-compose file:
 ```
 docker compose up & 
 ```
-The "&" character creates a process id for the command inputed in, with means that the container will not stop when you close the terminal. 
+The "&" character creates a process id for the command inputed, which means that the container will not stop when you close the terminal. 
 
 ---
 
 ### Using Application Server:
 
-Once the container is up and running, your devices can authenticate by TACACS+ connecting to `49/TCP` port, listening to TACACS authentication solicitations. 
+Once the container is up and running, your devices can authenticate using TACACS+ connecting to `49/TCP` port, listening for TACACS authentication requests. 
 
-### Configuring the device to authenticate into TACACS+ Server: 
+### Configuring the device to authenticate into the TACACS+ Server: 
 
-To configure the TACACS clients, you'll need to change parameters of AAA into the device and point it to ask TACACS server about the user permissions. To do that, the repository has an configuration example for `SG 1002 MR L2+` Intelbras's switch, you can access it in `./example/switch-example.conf`. 
+To configure the TACACS clients, you'll need to change the AAA parameters on the device and point it to ask the TACACS server about the user permissions. The repository has a configuration example for `SG 1002 MR L2+` Intelbras's switch, which you can access in `./example/switch-example.conf`. 
+
+--- 
+
+### TACACS authentication Logs:
+
+You can see the authentication requests in `./log/tacacs.log`. Some example requests are displayed below:
+
+```
+2024-03-09 20:04:45 +0000	10.100.29.250	arthur	    32	10.123.123.10	shell login failed (no such user)
+2024-03-09 20:04:45 +0000	10.100.29.250	carlos	    32	10.123.123.10	shell login failed (no such user)
+2024-03-09 20:04:55 +0000	10.100.29.250	admin	    32	10.123.123.10	shell login succeeded
+2024-03-09 20:05:17 +0000	10.100.29.250	capacita	32	10.123.123.10	shell login succeeded
+2024-03-09 20:06:29 +0000	10.100.29.250	capacita	32	10.123.123.10	shell login succeeded
+2024-03-09 20:06:58 +0000	10.100.29.250	capacita	32	10.123.123.10	shell login succeeded
+2024-03-09 20:07:25 +0000	10.100.29.250	guest	    32	10.123.123.10	shell login succeeded
+2024-03-09 20:08:09 +0000	10.100.29.250	guest	    32	10.123.123.10	shell login succeeded
+```
 
 --- 
 ### Stop Container: 
@@ -106,12 +125,12 @@ To stop the running container, use the following command:
 docker-compose down
 ```
 
-This command stops and removes the containers, networks, defined in the docker-compose.yml file.
+This command stops and removes the containers and networks defined in the docker-compose.yml file.
 
 --- 
 
-# References/Libs used: 
+# References/Libraries used: 
 
-[Base image (alpine-202104181633) used ](https://hub.docker.com/r/lfkeitel/tacacs_plus)
+[Base image (alpine-202104181633) used](https://hub.docker.com/r/lfkeitel/tacacs_plus)
 
-[TACACS+ documentation for server](http://www.pro-bono-publico.de/projects/unpacked/doc/tac_plus.pdf)
+[TACACS+ documentation for the server](http://www.pro-bono-publico.de/projects/unpacked/doc/tac_plus.pdf)
