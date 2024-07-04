@@ -1,0 +1,457 @@
+%Jul  4 20:27:34:638 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:27:35:126 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:27:37:639 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:27:39:083 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:27:41:639 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+*Jul  4 20:29:08:895 2024 INTELBRAS AAA/7/EVENT:
+ Received a accounting stop request message from the access module.
+*Jul  4 20:29:08:896 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:08:896 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:08:896 2024 INTELBRAS AAA/7/EVENT:
+ Started the stop-accounting progress.
+*Jul  4 20:29:08:897 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS stop-accounting.
+*Jul  4 20:29:08:897 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:08:898 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:08:898 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:08:900 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:08:901 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:08:902 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:08:902 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating accounting request packet.
+*Jul  4 20:29:08:903 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: ACCOUNT_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0x8d13d4cc
+length of payload: 88
+flags: STOP
+authen_method: NONE  priv_lvl: 15  authen_type: ASCII  authen_service: LOGIN
+user_len: 6   port_len: 4   rem_len: 13   arg_cnt: 5
+arg0_len: 9     arg1_len: 10    arg2_len: 13    arg3_len: 11
+arg4_len: 8
+user: arthur
+port: vty0
+rem_addr: 10.100.65.196
+arg0: task_id=0  arg1: timezone=0
+arg2: service=shell  arg3: priv-lvl=15
+arg4: cmd=quit
+*Jul  4 20:29:08:906 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:08:907 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: ACCOUNT_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0x8d13d4cc
+length of payload: 5
+server_msg len: 0  data len: 0  status: STATUS_SUCCESS
+server_msg:
+data:
+*Jul  4 20:29:08:907 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing accounting reply packet.
+*Jul  4 20:29:08:908 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+%Jul  4 20:29:08:916 2024 INTELBRAS CFGMAN/5/CFGMAN_EXIT_FROM_CONFIGURE: -Line=vty0-IPAddr=10.100.65.196-User=arthur; Exit from the system view or a feature view to the user view.
+*Jul  4 20:29:10:314 2024 INTELBRAS AAA/7/EVENT:
+ Received a accounting stop request message from the access module.
+*Jul  4 20:29:10:314 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:10:314 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:10:315 2024 INTELBRAS AAA/7/EVENT:
+ Started the stop-accounting progress.
+*Jul  4 20:29:10:315 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS stop-accounting.
+*Jul  4 20:29:10:316 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:10:316 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:10:317 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:10:322 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:10:322 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:10:323 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:10:323 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating accounting request packet.
+*Jul  4 20:29:10:324 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: ACCOUNT_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0x918f94c4
+length of payload: 88
+flags: STOP
+authen_method: NONE  priv_lvl: 15  authen_type: ASCII  authen_service: LOGIN
+user_len: 6   port_len: 4   rem_len: 13   arg_cnt: 5
+arg0_len: 9     arg1_len: 10    arg2_len: 13    arg3_len: 11
+arg4_len: 8
+user: arthur
+port: vty0
+rem_addr: 10.100.65.196
+arg0: task_id=0  arg1: timezone=0
+arg2: service=shell  arg3: priv-lvl=15
+arg4: cmd=quit
+%Jul  4 20:29:10:330 2024 INTELBRAS SHELL/5/SHELL_LOGOUT: arthur logged out from 10.100.65.196.
+*Jul  4 20:29:10:352 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:10:353 2024 INTELBRAS AAA/7/EVENT:
+ Received a accounting stop request message from the access module.
+*Jul  4 20:29:10:354 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:10:354 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:10:355 2024 INTELBRAS AAA/7/EVENT:
+ Started the stop-accounting progress.
+*Jul  4 20:29:10:355 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS stop-accounting.
+*Jul  4 20:29:10:355 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: ACCOUNT_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0x918f94c4
+length of payload: 5
+server_msg len: 0  data len: 0  status: STATUS_SUCCESS
+server_msg:
+data:
+*Jul  4 20:29:10:356 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing accounting reply packet.
+*Jul  4 20:29:10:362 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+*Jul  4 20:29:10:366 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:10:366 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:10:368 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:10:370 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:10:370 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:10:370 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating accounting request packet.
+*Jul  4 20:29:10:371 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: ACCOUNT_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0x8e9192e
+length of payload: 158
+flags: STOP
+authen_method: NONE  priv_lvl: 0  authen_type: ASCII  authen_service: LOGIN
+user_len: 6   port_len: 4   rem_len: 13   arg_cnt: 10
+arg0_len: 9     arg1_len: 10    arg2_len: 13    arg3_len: 12
+arg4_len: 16    arg5_len: 10    arg6_len: 11    arg7_len: 9
+arg8_len: 10    arg9_len: 16
+user: arthur
+port: vty0
+rem_addr: 10.100.65.196
+arg0: task_id=0  arg1: timezone=0
+arg2: service=shell  arg3: disc_cause=0
+arg4: disc_cause_ext=0  arg5: bytes_in=0
+arg6: bytes_out=0  arg7: paks_in=0
+arg8: paks_out=0  arg9: elapsed_time=183
+*Jul  4 20:29:10:384 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:10:385 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: ACCOUNT_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0x8e9192e
+length of payload: 5
+server_msg len: 0  data len: 0  status: STATUS_SUCCESS
+server_msg:
+data:
+*Jul  4 20:29:10:385 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing accounting reply packet.
+*Jul  4 20:29:10:386 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS stop-accounting.
+*Jul  4 20:29:10:387 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: TACACS stop-accounting succeeded.
+*Jul  4 20:29:10:387 2024 INTELBRAS AAA/7/EVENT:
+ Received accounting-stop reply message, ResultCode: 0.
+*Jul  4 20:29:10:387 2024 INTELBRAS AAA/7/EVENT:
+ Found a request context.
+*Jul  4 20:29:10:388 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:10:388 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+%Jul  4 20:29:10:425 2024 INTELBRAS SSHS/6/SSHS_LOG: User arthur logged out from 10.100.65.196 port 8121.
+%Jul  4 20:29:10:426 2024 INTELBRAS SSHS/6/SSHS_DISCONNECT: SSH user arthur (IP: 10.100.65.196) disconnected from the server.
+%Jul  4 20:29:13:232 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:29:15:647 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:29:16:069 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:29:18:704 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+*Jul  4 20:29:18:789 2024 INTELBRAS AAA/7/EVENT:
+ Received a authentication request message from the access module.
+*Jul  4 20:29:18:790 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:18:790 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:18:790 2024 INTELBRAS AAA/7/EVENT:
+ Started authentication.
+*Jul  4 20:29:18:791 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS authentication.
+*Jul  4 20:29:18:791 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:18:791 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:18:794 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:18:797 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:18:798 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:18:798 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating authentication request packet.
+*Jul  4 20:29:18:799 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: AUTHEN_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0x195d4224
+length of payload: 54
+action: LOGIN  priv_lvl: 0  authen_type: ASCII  service: LOGIN
+user_len: 9   port_len: 15   rem_len: 13   data_len: 9
+user: prevendas
+port: Vlan-interface1
+rem_addr: 10.100.65.196
+data: ******
+*Jul  4 20:29:18:802 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:18:804 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: AUTHEN_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0x195d4224
+length of payload: 6
+status: STATUS_PASS  flags: ECHO
+server_msg len: 0  data len: 0
+server_msg:
+data:
+*Jul  4 20:29:18:805 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing authentication reply packet.
+*Jul  4 20:29:18:805 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS authentication.
+*Jul  4 20:29:18:806 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: TACACS authentication succeeded.
+*Jul  4 20:29:18:808 2024 INTELBRAS AAA/7/EVENT:
+ Received authentication reply message, ResultCode: 0.
+*Jul  4 20:29:18:809 2024 INTELBRAS AAA/7/EVENT:
+ Found a request context.
+*Jul  4 20:29:18:809 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS authorization.
+*Jul  4 20:29:18:810 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+*Jul  4 20:29:18:812 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:18:813 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:18:816 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:18:817 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:18:818 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:18:818 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating authorization request packet.
+*Jul  4 20:29:18:819 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: AUTHOR_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0xeb031353
+length of payload: 64
+authen_method: TACACSPLUS  priv_lvl: 0  authen_type: ASCII  authen_service: LOGIN
+user_len: 9   port_len: 15   rem_len: 13   arg_cnt: 2
+arg0_len: 13    arg1_len: 4
+user: prevendas
+port: Vlan-interface1
+rem_addr: 10.100.65.196
+arg0: service=shell  arg1: cmd*
+*Jul  4 20:29:18:823 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:18:824 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: AUTHOR_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0xeb031353
+length of payload: 17
+Status: STATUS_PASS_ADD  arg_cnt: 1  server_msg len: 0  data len: 0
+arg0_len: 10
+server_msg:
+data:
+arg0: priv-lvl=1
+*Jul  4 20:29:18:825 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing authorization reply packet.
+*Jul  4 20:29:18:826 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS authorization.
+*Jul  4 20:29:18:827 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: TACACS authorization succeeded.
+*Jul  4 20:29:18:828 2024 INTELBRAS AAA/7/EVENT:
+ Received authorization reply message, ResultCode: 0.
+*Jul  4 20:29:18:828 2024 INTELBRAS AAA/7/EVENT:
+ Found a request context.
+*Jul  4 20:29:18:829 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:18:831 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+%Jul  4 20:29:18:860 2024 INTELBRAS SSHS/6/SSHS_AUTH_SUCCESS: SSH user prevendas from 10.100.65.196 port 8192 passed password authentication.
+%Jul  4 20:29:19:913 2024 INTELBRAS SSHS/6/SSHS_CONNECT: SSH user prevendas (IP: 10.100.65.196) connected to the server successfully.
+%Jul  4 20:29:20:070 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+*Jul  4 20:29:20:219 2024 INTELBRAS AAA/7/EVENT:
+ Received a accounting start request message from the access module.
+*Jul  4 20:29:20:220 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:20:220 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:20:220 2024 INTELBRAS AAA/7/EVENT:
+ Started the start-accounting process.
+*Jul  4 20:29:20:220 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS start-accounting.
+*Jul  4 20:29:20:221 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:20:222 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:20:225 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:20:226 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:20:226 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:20:227 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating accounting request packet.
+*Jul  4 20:29:20:227 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: ACCOUNT_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0x34c737b2
+length of payload: 70
+flags: START
+authen_method: NONE  priv_lvl: 0  authen_type: ASCII  authen_service: LOGIN
+user_len: 9   port_len: 4   rem_len: 13   arg_cnt: 3
+arg0_len: 9     arg1_len: 10    arg2_len: 13
+user: prevendas
+port: vty0
+rem_addr: 10.100.65.196
+arg0: task_id=0  arg1: timezone=0
+arg2: service=shell
+*Jul  4 20:29:20:230 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:20:232 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: ACCOUNT_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0x34c737b2
+length of payload: 5
+server_msg len: 0  data len: 0  status: STATUS_SUCCESS
+server_msg:
+data:
+*Jul  4 20:29:20:232 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing accounting reply packet.
+*Jul  4 20:29:20:233 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS start-accounting.
+*Jul  4 20:29:20:233 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: TACACS start-accounting succeeded.
+*Jul  4 20:29:20:233 2024 INTELBRAS AAA/7/EVENT:
+ Received accounting-start reply message, ResultCode: 0.
+*Jul  4 20:29:20:234 2024 INTELBRAS AAA/7/EVENT:
+ Found a request context.
+*Jul  4 20:29:20:234 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:20:236 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+%Jul  4 20:29:20:507 2024 INTELBRAS SHELL/5/SHELL_LOGIN: prevendas logged in from 10.100.65.196.
+%Jul  4 20:29:22:661 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+*Jul  4 20:29:31:891 2024 INTELBRAS AAA/7/EVENT:
+ Received a authorization request message from the access module.
+*Jul  4 20:29:31:891 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:31:891 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:31:892 2024 INTELBRAS AAA/7/EVENT:
+ Started authorization.
+*Jul  4 20:29:31:893 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS authorization.
+*Jul  4 20:29:31:893 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:31:894 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:31:895 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:31:897 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:31:898 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:31:898 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating authorization request packet.
+*Jul  4 20:29:31:898 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: AUTHOR_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0xe55bc412
+length of payload: 77
+authen_method: NONE  priv_lvl: 1  authen_type: ASCII  authen_service: LOGIN
+user_len: 9   port_len: 4   rem_len: 13   arg_cnt: 3
+arg0_len: 13    arg1_len: 15    arg2_len: 12
+user: prevendas
+port: vty0
+rem_addr: 10.100.65.196
+arg0: service=shell  arg1: cmd=system-view
+arg2: cmd-arg=<cr>
+*Jul  4 20:29:31:901 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:31:902 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: AUTHOR_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0xe55bc412
+length of payload: 6
+Status: STATUS_PASS_ADD  arg_cnt: 0  server_msg len: 0  data len: 0
+server_msg:
+data:
+*Jul  4 20:29:31:906 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing authorization reply packet.
+*Jul  4 20:29:31:907 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS authorization.
+*Jul  4 20:29:31:907 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: TACACS authorization succeeded.
+*Jul  4 20:29:31:908 2024 INTELBRAS AAA/7/EVENT:
+ Received authorization reply message, ResultCode: 0.
+*Jul  4 20:29:31:908 2024 INTELBRAS AAA/7/EVENT:
+ Found a request context.
+*Jul  4 20:29:31:908 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:31:910 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+*Jul  4 20:29:31:914 2024 INTELBRAS AAA/7/EVENT:
+ Received a accounting stop request message from the access module.
+*Jul  4 20:29:31:915 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:31:916 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:31:916 2024 INTELBRAS AAA/7/EVENT:
+ Started the stop-accounting progress.
+*Jul  4 20:29:31:917 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS stop-accounting.
+*Jul  4 20:29:31:918 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:31:918 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:31:919 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:31:921 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:31:926 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:31:926 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:31:927 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating accounting request packet.
+*Jul  4 20:29:31:928 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: ACCOUNT_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0x8fd9e4bf
+length of payload: 97
+flags: STOP
+authen_method: NONE  priv_lvl: 1  authen_type: ASCII  authen_service: LOGIN
+user_len: 9   port_len: 4   rem_len: 13   arg_cnt: 5
+arg0_len: 9     arg1_len: 10    arg2_len: 13    arg3_len: 10
+arg4_len: 15
+user: prevendas
+port: vty0
+rem_addr: 10.100.65.196
+arg0: task_id=0  arg1: timezone=0
+arg2: service=shell  arg3: priv-lvl=1
+arg4: cmd=system-view
+*Jul  4 20:29:31:933 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:31:934 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: ACCOUNT_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0x8fd9e4bf
+length of payload: 5
+server_msg len: 0  data len: 0  status: STATUS_SUCCESS
+server_msg:
+data:
+*Jul  4 20:29:31:935 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing accounting reply packet.
+*Jul  4 20:29:31:936 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+*Jul  4 20:29:38:882 2024 INTELBRAS AAA/7/EVENT:
+ Received a authorization request message from the access module.
+*Jul  4 20:29:38:882 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:38:882 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:38:882 2024 INTELBRAS AAA/7/EVENT:
+ Started authorization.
+*Jul  4 20:29:38:883 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS authorization.
+*Jul  4 20:29:38:883 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:38:884 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:38:885 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:38:887 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:38:888 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:38:888 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating authorization request packet.
+*Jul  4 20:29:38:888 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: AUTHOR_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0x38b107ca
+length of payload: 87
+authen_method: NONE  priv_lvl: 1  authen_type: ASCII  authen_service: LOGIN
+user_len: 9   port_len: 4   rem_len: 13   arg_cnt: 4
+arg0_len: 13    arg1_len: 11    arg2_len: 13    arg3_len: 12
+user: prevendas
+port: vty0
+rem_addr: 10.100.65.196
+arg0: service=shell  arg1: cmd=display
+arg2: cmd-arg=users  arg3: cmd-arg=<cr>
+*Jul  4 20:29:38:891 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:38:893 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: AUTHOR_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0x38b107ca
+length of payload: 6
+Status: STATUS_PASS_ADD  arg_cnt: 0  server_msg len: 0  data len: 0
+server_msg:
+data:
+*Jul  4 20:29:38:893 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing authorization reply packet.
+*Jul  4 20:29:38:893 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS authorization.
+*Jul  4 20:29:38:894 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: TACACS authorization succeeded.
+*Jul  4 20:29:38:894 2024 INTELBRAS AAA/7/EVENT:
+ Received authorization reply message, ResultCode: 0.
+*Jul  4 20:29:38:894 2024 INTELBRAS AAA/7/EVENT:
+ Found a request context.
+*Jul  4 20:29:38:894 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:38:895 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+*Jul  4 20:29:38:895 2024 INTELBRAS AAA/7/EVENT:
+ Received a accounting stop request message from the access module.
+*Jul  4 20:29:38:896 2024 INTELBRAS AAA/7/EVENT:
+ Found or created a request context.
+*Jul  4 20:29:38:896 2024 INTELBRAS AAA/7/EVENT:
+ Filled attributes to PAM.
+*Jul  4 20:29:38:896 2024 INTELBRAS AAA/7/EVENT:
+ Started the stop-accounting progress.
+*Jul  4 20:29:38:896 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing TACACS stop-accounting.
+*Jul  4 20:29:38:897 2024 INTELBRAS AAA/7/EVENT:
+ Sent a reply message to the access module
+*Jul  4 20:29:38:899 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Session successfully created.
+*Jul  4 20:29:38:899 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Getting available server, server-ip=10.100.65.119, server-port=49, VPN instance=--(public).
+*Jul  4 20:29:38:902 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connecting to server...
+*Jul  4 20:29:38:904 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLOUT event.
+*Jul  4 20:29:38:913 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Connection succeeded, server-ip=10.100.65.119, port=49, VPN instance=--(public).
+*Jul  4 20:29:38:913 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Encapsulating accounting request packet.
+*Jul  4 20:29:38:914 2024 INTELBRAS TACACS/7/send_packet:
+version: 0xc0  type: ACCOUNT_REQUEST  seq_no: 1  flag: ENCRYPTED_FLAG
+session-id: 0x15b42fd2
+length of payload: 99
+flags: STOP
+authen_method: NONE  priv_lvl: 1  authen_type: ASCII  authen_service: LOGIN
+user_len: 9   port_len: 4   rem_len: 13   arg_cnt: 5
+arg0_len: 9     arg1_len: 10    arg2_len: 13    arg3_len: 10
+arg4_len: 17
+user: prevendas
+port: vty0
+rem_addr: 10.100.65.196
+arg0: task_id=0  arg1: timezone=0
+arg2: service=shell  arg3: priv-lvl=1
+arg4: cmd=display users
+*Jul  4 20:29:38:918 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply SocketFd received EPOLLIN event.
+*Jul  4 20:29:38:919 2024 INTELBRAS TACACS/7/recv_packet:
+version: 0xc0  type: ACCOUNT_REPLY  seq_no: 2  flag: ENCRYPTED_FLAG
+session-id: 0x15b42fd2
+length of payload: 5
+server_msg len: 0  data len: 0  status: STATUS_SUCCESS
+server_msg:
+data:
+*Jul  4 20:29:38:919 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Processing accounting reply packet.
+*Jul  4 20:29:38:920 2024 INTELBRAS TACACS/7/EVENT: PAM_TACACS: Reply message successfully sent.
+%Jul  4 20:30:19:886 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:30:22:650 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:30:25:948 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
+%Jul  4 20:30:28:651 2024 INTELBRAS STP/6/STP_NOTIFIED_TC: Instance 0's port GigabitEthernet1/0/24 was notified a topology change.
