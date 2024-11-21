@@ -2,6 +2,8 @@
 
 ### This repository implements the [TACACS+](https://hub.docker.com/r/lfkeitel/tacacs_plus) images available on DockerHub to host and maintain an AAA server.
 
+![example](./templates/image.png)
+
 Prerequisites
 Before you begin, ensure you have the following packages installed on your system:
 
