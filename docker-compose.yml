@@ -15,3 +15,28 @@ services:
     volumes:
       - "./config/tac_plus.cfg:/etc/tac_plus/tac_plus.cfg"
       - "./log/tacacs.log:/var/log/tacacs.log"
+
+  tacacsdb:
+    container_name: tacacsdb
+    restart: always
+    build:
+      context: ./db/  
+      dockerfile: Dockerfile
+    ports:
+      - "3308:3306"
+    env_file:
+      - ./env/.env_tacacsdb
+    volumes:
+      - "./db/db_data:/var/lib/mysql"
+
+  connector:
+    container_name: connector
+    build:
+      context: ./app/
+      dockerfile: Dockerfile
+    depends_on:
+      - tacacasplus
+      - tacacsdb
+    volumes:
+      - "./app:/app"
+      - "./log:/applog"

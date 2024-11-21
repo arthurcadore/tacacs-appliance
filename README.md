@@ -11,6 +11,24 @@ Before you begin, ensure you have the following packages installed on your syste
 
 ---
 
+--- 
+### Generating a MD5 Hash password to use on code: 
+
+```
+cadore@cadore:~$ openssl passwd -1 -stdin
+teste
+$1$ff03l9ua$d09W4ga2wujq2ekklt2iR1
+```
+
+Updating on tacacs_plus.conf:
+
+```
+    user = arthur {
+        password = crypt $1$ff03l9ua$d09W4ga2wujq2ekklt2iR1
+        member = ped
+    }
+```
+
 ### Getting Started:
 
 First, copy the line below and paste it into your prompt to clone the repository:
