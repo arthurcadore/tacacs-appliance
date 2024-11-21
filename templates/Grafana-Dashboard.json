@@ -137,7 +137,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 8,
+        "h": 9,
         "w": 10,
         "x": 0,
         "y": 0
@@ -164,7 +164,7 @@
           "editorMode": "code",
           "format": "table",
           "rawQuery": true,
-          "rawSql": "SELECT id, timestamp as time\nFROM logs ",
+          "rawSql": "SELECT \n    TIMESTAMP(DATE_FORMAT(timestamp, '%Y-%m-%d %H:%i:00')) AS time,\n    COUNT(*) AS record_count\nFROM \n    logs\nGROUP BY \n    time\nORDER BY \n    time ASC;\n",
           "refId": "A",
           "sql": {
             "columns": [
@@ -235,7 +235,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 9,
         "w": 14,
         "x": 10,
         "y": 0
@@ -254,6 +254,9 @@
         "orientation": "horizontal",
         "showValue": "always",
         "stacking": "none",
+        "text": {
+          "valueSize": 15
+        },
         "tooltip": {
           "mode": "single",
           "sort": "none"
@@ -323,7 +326,7 @@
         "h": 7,
         "w": 7,
         "x": 0,
-        "y": 8
+        "y": 9
       },
       "id": 2,
       "options": {
@@ -513,10 +516,10 @@
         ]
       },
       "gridPos": {
-        "h": 16,
+        "h": 18,
         "w": 17,
         "x": 7,
-        "y": 8
+        "y": 9
       },
       "id": 4,
       "options": {
@@ -586,10 +589,10 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 11,
         "w": 7,
         "x": 0,
-        "y": 15
+        "y": 16
       },
       "id": 7,
       "options": {
@@ -650,6 +653,7 @@
       "type": "piechart"
     }
   ],
+  "refresh": "1m",
   "schemaVersion": 37,
   "style": "dark",
   "tags": [],
@@ -657,13 +661,13 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
+    "from": "now-1h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "TACACS+ Server Dashboard",
   "uid": "4PnBSF7Hz",
-  "version": 2,
+  "version": 6,
   "weekStart": ""
 }
