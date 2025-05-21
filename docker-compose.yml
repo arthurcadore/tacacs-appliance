@@ -15,6 +15,7 @@ services:
     volumes:
       - "./config/tac_plus.cfg:/etc/tac_plus/tac_plus.cfg"
       - "./log/tacacs.log:/var/log/tacacs.log"
+    restart: always
 
   tacacsdb:
     container_name: tacacsdb
@@ -30,6 +31,7 @@ services:
       - "./db/db_data:/var/lib/mysql"
 
   connector:
+    restart: always
     container_name: connector
     build:
       context: ./app/
